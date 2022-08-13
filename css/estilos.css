@@ -2,7 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* quita el borde a la caja contenedor */
+  font-family: "Open Sans", sans-serif;
+
 }
+
+/* --------------------VARIABLES------------------------------------------- */
+
 
 :root {
   --gradient-black-red: linear-gradient(
@@ -22,6 +27,9 @@
   );
 }
 
+/* --------------------BODY-HEADER------------------------------------------- */
+
+
 .container-body {
   height: 100vh;
   display: grid;
@@ -30,49 +38,57 @@
 
 .header {
   background-color: #111111;
-  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   display: grid;
-  grid-template-columns: 1.7fr 5fr 0.5fr;
+  grid-template-columns: 0.5fr 1.2fr 5.5fr 1.2fr;
   text-transform: uppercase;
-  text-align: center;
 }
 
+/* --------------------HEADER-LOGO-------------------------- */
+
+
+.logo {
+  display: grid;
+  place-items: center;
+  height: 150px;
+  width: 150px;
+}
+
+.container-imagen-logo {
+  background-image: url(../multimedia/LogoPlateadoSinBordes.png);
+  background-size: cover;
+  width: 70%;
+  height: 100%;
+}
+
+.container-imagen-logo:hover {
+  background-image: url(../multimedia/LogoRojoSinBordes.png);
+}
+
+
+/* --------------------HEADER-TEXTO-LOGO--------------------- */
 
 
 .container-texto-logo {
-  text-align: center;
-  padding-top: 30px;
-  padding-right: 20px;
+  display: grid;
+  place-items: center;
 }
 
-.texto-logo {
+.container-texto-logo h1{
+  margin:0;
   color: #fe2d2f;
   font-size: 50px;
-  font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
 
-.texto-logo2 {
+.texto {
   color: #edf2f4;
   font-size: 20px;
-  font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  justify-content: space-between;
-
 }
 
-.text {
-  color: #edf2f4;
-  font-size: 20px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  justify-content: space-between;
-}
-
-.parpadea {
-  
+.parpadea {  
   animation-name: parpadeo;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -103,22 +119,12 @@
 }
 
 
+/* --------------------HEADER-NAV/MENU------------------------- */
 
-.logo {
-  float: left;
-  height: 150px;
-  width: 150px;
-}
 
-.container-imagen-logo {
-  background-image: url(../multimedia/LogoPlateadoSinBordes.png);
-  background-size: cover;
-  width: 70%;
-  height: 100%;
-}
-
-.container-imagen-logo:hover {
-  background-image: url(../multimedia/LogoRojoSinBordes.png);
+.menu {
+  display: grid;
+  place-items: center;
 }
 
 .inicio-nav {
@@ -126,17 +132,16 @@
   text-decoration: none;
 }
 
-.separador {
-  position: relative;
-  color: #d63138;
-  padding: 0 10px;
+.menu-separador-inicio {
+  color: #111111;
+  padding: 0px 10px 0px 10px ;
 }
 
-.menu {
-  display: grid;
-  place-items: center;
-  padding-right: 320px;
+.menu-separador {
+  color: #d63138;
+  padding: 0px 10px 0px 10px ;
 }
+
 
 .menu li {
   display: inline-block;
@@ -145,7 +150,7 @@
 
 .a-nav {
   color: #edf2f4;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-decoration: none;
 }
 
@@ -154,15 +159,18 @@
   transition: all 0.6s;
 }
 
+/* --------------------HEADER-SOCIAL---------------------------- */
+
 .container-social {
-  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  letter-spacing: 40px;
+  font-size: 25px;
 }
 
 .fa-brands {
   color: #d63138;
-  font-size: 25px;
-  letter-spacing: 40px;
-  padding-top: 60px;
 }
 
 .fa-brands:hover {
@@ -170,25 +178,28 @@
   transition: all 0.6s;
 }
 
+/* --------------------FIN-HEADER------------------------------------------------- */
+
+/* --------------------MAIN------------------------------------------------------- */
+
 .main-descuento {
   border: solid 2px red;
 }
 
 .main-descuento {
   height: 100vh;
-  width: auto;
   background-image: url(../multimedia/gym8.jpg);
   filter: brightness(60%);
   background-size: cover;
   background-position: center;
+  text-transform: uppercase;
+
 }
 
 .div-frase-main {
   color: #edf2f4;
   font-size: 35px;
-  font-family: "Open Sans", sans-serif;
   font-weight: 800;
-  text-transform: uppercase;
   height: 300px;
   padding-top: 200px;
   text-align: center;
@@ -196,14 +207,15 @@
 
 .div-frase-main span {
   color: #d63138;
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
 }
 
 .div-frase-main h2 {
   text-align: center;
   padding-bottom: 40px;
 }
+
+/* --------------------MAIN-BOTON---------------------------- */
+
 
 .boton {
   background-color: #d63138;
@@ -213,6 +225,7 @@
   border: 1px solid #d63138;
   padding: 0 10px 10px 10px;
 }
+
 .boton span {
   color: #edf2f4;
   font-size: 20px;
@@ -225,6 +238,9 @@
   transition: all 0.8s;
   border: 2px solid #d63138;
 }
+
+/* --------------------MAIN-BOTON-SUBIR------------------------- */
+
 
 .boton-subir {
   height: 35px;
@@ -246,11 +262,10 @@
   border: 0.5px solid #d63138;
 }
 
-/* -------------------------------CALENDARIO---------------------------------------------------------------------------- */
+/* -------------------------------ACTIVIDADES---------------------------------------------------------------------------- */
 
 .main__calendario {
   background-color: #111111;
-  font-family: "Open Sans", sans-serif;
   height: 100vh;
   width: 100%;
   background-size: contain;
@@ -260,6 +275,9 @@
   border: #111111;
 }
 
+/* --------------------TITULO-CALENDARIO------------------------- */
+
+
 div h3 {
   color: white;
   text-transform: uppercase;
@@ -268,6 +286,8 @@ div h3 {
   padding-top: 80px;
   padding-bottom: 30px;
 }
+
+/* --------------------TABLA-CALENDARIO------------------------- */
 
 .section-calendario {
   width: 70%;
@@ -313,8 +333,9 @@ div h3 {
 .main__blog {
   height: auto;
   background-color: #111111;
-  font-family: "Open Sans", sans-serif;
 }
+
+/* --------------------GALERIA------------------------- */
 
 .section-blog {
   width: auto;
@@ -328,7 +349,6 @@ div h3 {
   grid-template-rows: (250px);
   grid-gap: 40px;
   padding: 20px;
-
   box-shadow: 0 0 20px #333;
   background-color: #111111;
 }
@@ -404,9 +424,11 @@ div h3 {
   text-transform: uppercase;
 }
 
+/* --------------------TEXTO-GALERIA------------------------- */
+
+
 .redes-titulo {
   background-image: var(--gradient-black-red);
-
   color: white;
   text-align: center;
   font-size: 30px;
@@ -420,30 +442,39 @@ div h3 {
   text-transform: none;
 }
 
-/* -------------------------------NOSOTROS---------------------------------------------------------------------------- */
+/* -------------------------------ACERCA DE---------------------------------------------------------------------------- */
 
 .main__nosotros {
   background-color: #111111;
   height: 100vh;
   width: 100%;
-}
-p {
-  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
+
 }
+
+/* --------------------TITULO-SUB------------------------- */
 
 .titulo-nosotros {
   font-size: 50px;
-  float: center;
   color: #edf2f4;
+  display: grid;
+  place-items: center;
+  padding-top: 50px;
 }
 
 .sub-titulo-nosotros {
-  float: center;
-  color: #edf2f4;
+    color: #edf2f4;
   text-transform: none;
   font-size: 15px;
+  display: grid;
+  place-items: center;
+  padding-top: 30px;
+
+  
 }
+
+/* --------------------ITEMS-NOSOTROS------------------------- */
+
 
 .lista-nosotros {
   color: #edf2f4;
@@ -467,11 +498,10 @@ p {
   text-transform: none;
 }
 
-/* -------------------------------PLANES---------------------------------------------------------------------------- */
+/* -------------------------------PRECIOS---------------------------------------------------------------------------- */
 
 .main__planes {
   background-image: url(../multimedia/gym9.jpg);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .section-planes {
@@ -495,6 +525,9 @@ p {
   border: 2px solid black;
   border-radius: 7px;
 }
+
+/* --------------------INFO-PLANES------------------------- */
+
 
 .plan1 {
   background-color: rgba(255, 255, 255, 0.473);
@@ -527,10 +560,8 @@ p {
 /* -------------------------------CONTACTO---------------------------------------------------------------------------- */
 .contacto__body {
   background-color: #111111;
-  font-family: "Open Sans", sans-serif;
-
-  
 }
+
 
 
 .container-social-contacto {
@@ -551,11 +582,13 @@ text-align: center;
 padding-top: 30px;
 }
 
-
-
 .container-social-contacto i{
   font-size: 50px;
   }
+
+
+/* --------------------FORMULARIO------------------------- */
+
 
 .titulo-formulario{
 text-align: center;
@@ -587,6 +620,9 @@ input, textarea{
 .centrador{
   text-align: center;
 }
+
+/* --------------------INFO+MAPA------------------------- */
+
 
 .container-info-mapa{
   display: grid;
@@ -633,7 +669,6 @@ footer {
   background-color: #111111;
   color: rgb(197, 194, 194);
   font-size: 10px;
-  font-family: "Open Sans", sans-serif;
   padding: 20px;
   font-weight: 600;
   text-transform: capitalize;
@@ -652,77 +687,72 @@ footer {
   color: #d63138;
 }
 
+
+
+
+
+
 /* -------------------- MEDIA QUERIES ---------------- */
 
-@media only screen and (max-width: 980px) {
-  .container-body {
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+
+@media only screen and (max-width: 1899px) {
+
+  .container-texto-logo h1{
+    font-size: 28px;
+  }
+  .texto {
+    font-size: 15px;
   }
 
-  .header {
-    font-size: 16px;
-    font-weight: 700;
-    display: grid;
-    grid-template-columns: 2fr 3fr 0.8fr;
-    text-transform: uppercase;
-    border: solid 2px blue;
-    text-align: center;
-  }
+}
 
-  .menu {
-    padding-right: 0px;
-    border: solid 2px pink;
-  }
 
-  .menu ul {
-    display: grid;
-    place-items: center;
-    padding-right: 0px;
-  }
 
-  .menu a {
-    font-size: 10px;
-  }
 
-  .separador {
-    position: relative;
-    color: #111111;
-    padding: 0 0px;
-  }
+/* /////////////////////////////////////////////////////////////// */
 
-  .container-logo {
-    display: grid;
-    place-items: center;
-  }
 
-  .container-texto-logo {
-    padding-top: 0px;
-    padding-right: 0px;
-  }
 
-  .texto-logo {
-    font-size: 20px;
-  }
 
-  .texto-logo2 {
-    font-size: 10px;
-  }
+@media only screen and (max-width: 1200px) {
+
+  /* ----------- HEADER ------------ */
 
   .logo {
-    display: grid;
-    place-items: center;
-    height: 70px;
-    width: 70px;
+    height: 100px;
+    width: 100px;
+  }  
+
+  .container-texto-logo h1{
+    font-size: 28px;
+  }  
+
+  .texto {
+    font-size: 10px;
   }
 
-  .fa-brands {
-    display: grid;
-    place-items: center;
-    font-size: 20px;
-    letter-spacing: 5px;
+  /* ------- HEADER-MENU -------- */
+
+  .menu a {
+    font-size: 12px;
   }
+
+  .menu-separador {
+    padding: 0px 2px 0px 2px ;
+  }
+
+
+    /* ------- HEADER-SOCIAL -------- */
+
+  
+
+  .fa-brands {
+    font-size: 20px;
+    letter-spacing: 20px;
+  }
+
+  /* ----------- MAIN ------------ */
+
 
   .main-descuento {
     width: auto;
@@ -760,6 +790,7 @@ footer {
 
   div h3 {
     font-size: 30px;
+    text-align: center;
   }
 
   .section-calendario {
@@ -790,22 +821,60 @@ footer {
   footer p {
     font-size: 6px;
   }
+}
 
-  @media only screen and (max-width: 802px) {
-    .section-planes {
-      border: 2px red solid;
+
+
+/* /////////////////////////////////////////////////////////////// */
+
+
+
+  @media only screen and (max-width: 1101px) {
+
+
+    .texto {
+      color: #edf2f4;
+      font-size: 10px;
+      font-weight: 700;
+      padding-right: 35px;
     }
 
-    /* --------------Acerca de----------------------- */
+  }
 
-    .container-nosotros {
-      display: grid;
-      place-items: center;
-      border: solid 2px greenyellow;
-    }
 
-    .titulo-nosotros {
-      font-size: 15px;
+
+/* /////////////////////////////////////////////////////////////// */
+
+
+
+  @media only screen and (max-width: 840px) {
+    
+
+/* ------- HEADER-MENU -------- */
+
+.container-texto-logo h1{
+  font-size: 40px;
+}
+
+.texto {
+  padding-right: 10px;
+}
+.menu-separador-inicio{
+  color: white;
+  padding: 0px 2px 0px 2px;
+}
+
+
+  .menu ul {
+    display: grid;
+  } 
+
+  .menu a {
+    font-size: 10px;
+  }   
+
+  .titulo-nosotros {
+    font-size: 15px;
     }
 
     .sub-titulo-nosotros {
@@ -827,9 +896,17 @@ footer {
       font-size: 10px;
     }
   }
-}
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////// */
+
+
 
 @media only screen and (max-width: 560px) {
+
   .redes-titulo {
     font-size: 20px;
   }
@@ -857,6 +934,19 @@ footer {
 }
 
 @media only screen and (max-width: 475px) {
+
+  .logo {
+    height: 70px;
+    width: 70px;
+  } 
+
+  .container-texto-logo h1{
+    font-size: 18px;
+  }
+  
+  .texto {
+    font-size:  8px;
+  }
   .section-calendario {
     width: 100%;
     grid-auto-rows: 50px;
