@@ -24,52 +24,41 @@
 
 <body class="contacto__body">
 
-    <header class="header">
-      <div>
-        <a class="logo" href="../index.html"><div class="container-imagen-logo"></div></a>
-      </div> 
-    
-        
-      <div class="container-texto-logo">
-        <h1><p class="texto-logo">wolf gym</p></h1>
-        <span class="parpadea texto"><strong>let out the beast</strong></span>          
-      </div> 
-      
-        
-        
-      <div class="menu">
-
-        <nav class="navbar navbar-expand-sm">       
-          
-          <!-- Links -->
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link red" href="../index.html"><span class="menu-separador-inicio">|</span>Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./actividades.html"><span class="menu-separador">|</span>Actividades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./blog.html"><span class="menu-separador">|</span>Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./acercade.html"><span class="menu-separador">|</span>Acerca de</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./precios.html"><span class="menu-separador">|</span>Precios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contacto.html"><span class="menu-separador">|</span>Contacto</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+  <header class="header">       
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand logo" href="../index.html"><div class="container-imagen-logo"></div></a>
+    <div class="container-texto-logo">
+      <h1><p class="texto-logo">wolf gym</p></h1>
+      <span class="parpadea texto"><strong>let out the beast</strong></span>
+    </div>
+    <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   
-        <div class="container-social">
-          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-        </div>
-      </header>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav navbar-center ">
+        <li class="nav-item active">
+          <a class="nav-link red" href="../index.html"><span class="menu-separador-inicio">|</span>Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./actividades.html"><span class="menu-separador">|</span>Actividades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./blog.html"><span class="menu-separador">|</span>Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./nosotros.html"><span class="menu-separador">|</span>Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html#precios-1"><span class="menu-separador">|</span>Precios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contacto.html"><span class="menu-separador">|</span>Contacto</a>
+        </li>                         
+      </ul>
+    </div>
+  </nav>
+    </header>
 
     <main>
     <div class="container-titulo-contacto">contactanos</div>
@@ -85,20 +74,20 @@
             <div><p class="titulo-formulario">Mensaje directo</p></div><br>
        
             <form action="">
-              <p>Nombre:</p>
+              <p>Nombre</p>
               <input type="text" class="field"> <br/>
             
-              <p>Correo electrónico:</p>
+              <p>Correo electrónico</p>
               <input type="text" class="field"> <br/>
             
               <p>Telefono (opcional)</p>
               <input type="text" class="field"> <br/>
             
-              <p>Mensaje:</p>
+              <p>Mensaje</p>
               <textarea class="field"></textarea> <br/>
             
               <p class="centrador">
-                <input type="submit" class="boton" value="Enviar Datos">
+                <input type="submit" class="btn btn-danger" value="Enviar Datos">
               </p>
             
             </form>
@@ -113,11 +102,11 @@
 
             <p class="titulo-info">INFORMACION</p>
 
-            <li>(11)4458 1478</li>
-            <li>info@wolfgym.com.ar</li>
+            <li><i class=" fa-brands fa-solid fa-phone"></i> (11) 4458 1478</li>
+            <li><i class="fa-brands fa-solid fa-envelope-open"></i>info@wolfgym.com.ar</li>
 
             <p class="titulo-info">DIRECCION</p>
-            <li>El Salvador 5218 Soho, CP 1414, Buenos Aires</li>
+            <li><i class="fa-brands fa-solid fa-location-dot"></i>El Salvador 5218 Soho, CP 1414, Buenos Aires</li>
           </div>
 
             <iframe
@@ -138,6 +127,7 @@
         
             <a href="#" class="boton-subir">
               <i class="fa-solid fa-angle-up"></i>
+            </a>
               
 </div>
 <script
