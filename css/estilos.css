@@ -160,17 +160,22 @@
 
 .main-descuento {
   filter: brightness(70%);
-  
+
+}
+
+.w-100{
+  object-fit: cover;
+  max-height: 800px !important;
 
 }
 
 .div-frase-main {
   color: #edf2f4;
-  font-size: 35px;
+  font-size: 45px;
   font-weight: 800;
   background-color: #11111100;
   position: absolute !important;
-  bottom: 400px !important;
+  bottom: 500px !important;
   /* right: 0 !important; */
 
 }
@@ -185,7 +190,7 @@
 .div-frase-main h3 {
   background-color: #11111100;
   text-align: center;
-  font-size: 35px;
+  font-size: 55px;
   font-weight: 800;  
 }
 
@@ -812,7 +817,7 @@ footer {
   }
 
   .div-frase-main {
-    font-size: 10px;
+    font-size: 40px;
     height: 300px;
     padding-top: 200px;
     text-align: center;
@@ -1013,10 +1018,7 @@ footer {
   .container-texto-logo h1{
     font-size: 30px;
   }
-  
-  .table-dark{    
-    /* font-size: 6px;   */
-    }
+   
 
   .redes-titulo {
     font-size: 20px;
@@ -1074,9 +1076,6 @@ footer {
     font-weight: 600;
   }
 
-  .table-dark{    
-    /* font-size: 3px;    */
-  }  
   .texto {
     font-size:  8px;
   }
