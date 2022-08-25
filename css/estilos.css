@@ -100,14 +100,14 @@
 }
 
 .container-imagen-logo {
-  background-image: url(../multimedia/LogoPlateadoSinBordes.png);
+  background-image: url(./multimedia/LogoPlateadoSinBordes.png);
   background-size: cover;
   width: 70%;
   height: 110%;
 }
 
 .container-imagen-logo:hover {
-  background-image: url(../multimedia/LogoRojoSinBordes.png);
+  background-image: url(./multimedia/LogoRojoSinBordes.png);
 }
 
 /* --------------------HEADER-NAV/MENU------------------------- */
