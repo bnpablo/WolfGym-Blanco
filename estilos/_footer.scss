@@ -1,0 +1,25 @@
+/* -------------------------------FOOTER---------------------------------------------------------------------------- */
+
+footer {
+    background-color: $colorBlack;
+    color: rgb(197, 194, 194);
+    font-size: 10px;
+    padding: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: auto;
+    width: 100%;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: $colorWhite;
+  }
+  .footer span {
+    color: $colorRed1;
+  }
+  
+  

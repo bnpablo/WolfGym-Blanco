@@ -1,0 +1,347 @@
+/* -------------------- MEDIA QUERIES ---------------- */
+
+@media only screen and (max-width: 1550px) {
+  .header {
+    font-size: 12px;
+  }
+
+  .container-texto-logo h1 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 1417px) {
+  .header {
+    font-size: 9px;
+  }
+
+  .container-texto-logo h1 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1225px) {
+  /* ----------- HEADER ------------ */
+
+  .texto-galeria {
+    font-size: 16px !important;
+  }
+
+  .texto {
+    font-size: 10px;
+  }
+
+  /* ------- HEADER-MENU -------- */
+
+  .menu a {
+    font-size: 12px;
+  }
+
+  .menu-separador {
+    padding: 0px 2px 0px 2px;
+  }
+
+  /* ------- HEADER-SOCIAL -------- */
+
+  .fa-brands {
+    font-size: 20px;
+    letter-spacing: 20px;
+  }
+
+  /* ----------- MAIN ------------ */
+
+  .main-descuento {
+    width: auto;
+    background-image: url(../multimedia/gym8-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .div-frase-main {
+    font-size: 40px;
+    height: 300px;
+    padding-top: 200px;
+    text-align: center;
+  }
+
+  div h3 {
+    color: $colorWhite;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 30px;
+    padding-top: 30px;
+  }
+
+  /* -----------blog--------------- */
+
+  .section-blog {
+    margin-top: 20px;
+    padding-bottom: 60px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  /* -----------calendario--------------- */
+
+  div h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .section-calendario {
+    width: 100%;
+    font-size: 10px;
+  }
+
+  /* -----------planes--------------- */
+
+  .section-planes {
+    width: 100%;
+    height: auto;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 100%;
+    grid-row-gap: 50px;
+    grid-column-gap: 5px;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .box-planes p {
+    font-size: 30px;
+  }
+
+  /* -----------footer--------------- */
+
+  footer p {
+    font-size: 6px;
+  }
+}
+
+/* /////////////////////////////////////////////////////////////// */
+
+@media only screen and (max-width: 1145px) {
+  .logo {
+    height: 100px;
+    width: 100px;
+  }
+
+  .container-texto-logo h1 {
+    font-size: 15px;
+  }
+
+  .texto {
+    color: $colorWhite;
+    font-size: 10px;
+    font-weight: 700;
+    padding-right: 35px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .container-texto-logo h1 {
+    font-size: 40px;
+  }
+
+  .texto {
+    padding-right: 10px;
+  }
+
+  .div-frase-main {
+    font-size: 25px;
+    bottom: 200px !important;
+    h3 {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .btn-danger {
+    font-size: 10px;
+    font-weight: 600;
+  }
+}
+
+/* /////////////////////////////////////////////////////////////// */
+@media only screen and (max-width: 903px) {
+  .main__calendario {
+    font-size: 10px;
+  }
+
+  /* /////////////////////////////////////////////////////////////// */
+
+  @media only screen and (max-width: 840px) {
+    /* ------- HEADER-MENU -------- */
+
+    .container-texto-logo h1 {
+      font-size: 40px;
+    }
+
+    .texto {
+      padding-right: 10px;
+    }
+    .menu-separador-inicio {
+      color: $colorWhite;
+      padding: 0px 2px 0px 2px;
+    }
+
+    .menu {
+      ul {
+        display: grid;
+      }
+
+      a {
+        font-size: 10px;
+      }
+    }
+
+    .titulo-nosotros {
+      font-size: 15px;
+    }
+
+    .sub-titulo-nosotros {
+      font-size: 10px;
+    }
+
+    .lista-nosotros {
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      i {
+        font-size: 20px;
+        padding: 10px;
+      }
+    }
+
+    .item1 {
+      font-size: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 630px) {
+    .main__calendario {
+      font-size: 8px;
+    }
+  }
+  /* /////////////////////////////////////////////////////////////// */
+
+  @media only screen and (max-width: 560px) {
+    .main__calendario {
+      font-size: 6px;
+    }
+
+    .container-texto-logo h1 {
+      font-size: 30px;
+    }
+
+    .redes-titulo {
+      font-size: 20px;
+    }
+
+    .redes-parrafo {
+      padding: 10px;
+      font-size: 12px;
+    }
+
+    .lista-nosotros i {
+      font-size: 20px;
+    }
+
+    .section-planes {
+      width: 100%;
+      height: auto;
+      grid-template-columns: 100%;
+      grid-template-rows: 30% 30% 30%;
+      grid-row-gap: 50px;
+      grid-column-gap: 5px;
+      padding: 10px;
+      text-align: center;
+      justify-content: space-between;
+    }
+  }
+
+  @media only screen and (max-width: 475px) {
+    .container-texto-logo h1 {
+      font-size: 22px;
+    }
+
+    .logo {
+      height: 70px;
+      width: 70px;
+    }
+
+    .div-frase-main {
+      bottom: 150px !important;
+
+      h3 {
+        font-size: 20px;
+        padding-bottom: 0px !important;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    .btn-danger {
+      font-size: 7px;
+      font-weight: 600;
+    }
+
+    .texto {
+      font-size: 8px;
+    }
+    .section-calendario {
+      width: 100%;
+      grid-auto-rows: 50px;
+    }
+
+    div h3 {
+      font-size: 20px;
+    }
+
+    .section-calendario {
+      font-size: 6px;
+    }
+    .redes-parrafo {
+      padding: 10px;
+      font-size: 9px;
+    }
+    .sub-titulo-nosotros {
+      font-size: 8px;
+    }
+
+    .box-planes p {
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 367px) {
+    .div-frase-main {
+      bottom: 100px !important;
+
+      h3 {
+        font-size: 15px;
+        padding-bottom: 0px !important;
+      }
+
+      p {
+        font-size: 10px;
+      }
+    }
+
+    .btn-danger {
+      font-size: 7px;
+      font-weight: 600;
+    }
+  }
+
+  .main__calendario {
+    font-size: 4px;
+  }
+}

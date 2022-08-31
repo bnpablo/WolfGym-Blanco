@@ -1,0 +1,81 @@
+/* -------------------------------INICIO _ACTIVIDADES.SCSS-------------------------------- */
+
+.main__calendario {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.classtime-table table {
+  thead tr th {
+    background: $colorBlackTable;
+    border-top: 1px solid $colorBlack;
+    border-right: 1px solid $colorBlack;
+    border-bottom: 1px solid $colorBlack;
+  }
+
+  tbody tr td {
+    text-align: center;
+    border-right: 1px solid $colorBlack;
+    border-bottom: 1px solid $colorBlack;
+    width: 146px;
+    padding: 10px 10px 10px;
+    position: relative;
+    z-index: 1;
+    background: $colorBlackTable;
+  }
+}
+
+/* --------------------TITULO-CALENDARIO------------------------- */
+
+div h3 {
+  color: $colorWhite;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+/* --------------------TABLA-CALENDARIO------------------------- */
+
+.table-dark {
+  background-color: $colorBlack;
+
+  th {
+    color: $colorRed1;
+  }
+}
+
+.red {
+  color: $colorRed1;
+}
+.inicio-tabla {
+  grid-column-start: 1;
+}
+
+.main__calendario div {
+  color: $colorWhite;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+
+  span {
+    color: $colorRed2;
+    text-align: center;
+  }
+}
+
+.section-calendario div {
+  border: 1px solid rgb(66, 66, 66);
+}
+
+.tabla__dias,
+.tabla__horario {
+  font-weight: bold;
+}

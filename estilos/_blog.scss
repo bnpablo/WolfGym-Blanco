@@ -1,0 +1,50 @@
+/* -------------------------------INICIO _BLOG.SCSS----------------------------------------------------------- */
+
+.text-center h3 {
+  font-size: 40px;
+}
+
+.main__blog {
+  height: auto;
+}
+
+#galeria .col-lg-4 p {
+  padding-top: 30px;
+  color: $colorRed1;
+  font-size: 20px;
+  text-transform: uppercase;
+
+  span {
+    color: $colorWhite;
+    font-size: 35px;
+    text-transform: uppercase;
+  }
+}
+
+#galeria img {
+  width: 100%;
+  height: auto;
+}
+
+.col-lg-4 img:hover {
+  transform: scale(1.1);
+  transition: all 0.8s;
+  filter: grayscale(0);
+}
+
+/* --------------------TEXTO-GALERIA------------------------- */
+
+.redes-titulo {
+  background-image: var(--gradient-black-red);
+  color: $colorWhite;
+  text-align: center;
+  font-size: 30px;
+}
+
+.redes-parrafo {
+  background-image: var(--gradient-black-red);
+  color: $colorWhite;
+  padding: 10px;
+  text-align: center;
+  text-transform: none;
+}

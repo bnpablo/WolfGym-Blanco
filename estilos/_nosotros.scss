@@ -1,0 +1,51 @@
+/* -------------------------------INICIO _NOSOTROS.SCSS---------------------------------------------------------------------------- */
+
+.main__nosotros {
+  background-color: $colorBlack;
+  height: 100vh;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+/* --------------------TITULO-SUB------------------------- */
+
+.titulo-nosotros {
+  font-size: 50px;
+  color: $colorWhite;
+  display: grid;
+  place-items: center;
+  padding-top: 50px;
+}
+
+.sub-titulo-nosotros {
+  color: $colorWhite;
+  text-transform: none;
+  font-size: 15px;
+  display: grid;
+  place-items: center;
+  padding-top: 30px;
+}
+
+/* --------------------ITEMS-NOSOTROS------------------------- */
+
+.lista-nosotros {
+  color: $colorWhite;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  i {
+    color: $colorRed2;
+    font-size: 50px;
+    padding: 70px;
+  }
+}
+
+.item1 {
+  font-size: 10px;
+  color: rgb(128, 126, 126);
+  text-transform: none;
+}

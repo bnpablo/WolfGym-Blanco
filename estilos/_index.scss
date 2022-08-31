@@ -1,0 +1,196 @@
+/* --------------------INICIO _INDEX.SCSS------------------------------------------- */
+
+/* --------------------BODY-HEADER------------------------------------------- */
+.container-body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
+}
+
+.header {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* --------------------HEADER-TEXTO-LOGO--------------------- */
+
+.container-texto-logo h1 {
+  font-family: $fuente;
+  color: $colorRed2;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.texto {
+  color: $colorWhite;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.parpadea {
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo {
+  float: left;
+  height: 150px;
+  width: 150px;
+}
+
+.container-imagen-logo {
+  background-image: url(../multimedia/LogoPlateadoSinBordes.png);
+  background-size: cover;
+  width: 70%;
+  height: 110%;
+}
+
+.container-imagen-logo:hover {
+  background-image: url(../multimedia/LogoRojoSinBordes.png);
+}
+
+/* --------------------HEADER-NAV/MENU------------------------- */
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: $colorWhite;
+}
+
+.nav-link {
+  color: $colorWhite !important;
+  letter-spacing: 3px;
+}
+
+.nav-link:hover {
+  color: $colorRed1 !important;
+  transition: all 0.6s;
+}
+
+.menu-separador {
+  color: $colorRed1;
+  padding: 0px 10px 0px 10px;
+}
+.menu-separador-inicio {
+  color: $colorBlack;
+  padding: 0px 10px 0px 10px;
+}
+
+/* --------------------FIN-HEADER------------------------------------------------- */
+
+/* --------------------MAIN------------------------------------------------------- */
+
+.main-descuento {
+  filter: brightness(70%);
+}
+
+.w-100 {
+  object-fit: cover;
+  max-height: 800px !important;
+}
+
+.div-frase-main {
+  color: $colorWhite;
+  font-size: 45px;
+  font-weight: 800;
+  background-color: $colorBlackTrans;
+  position: absolute !important;
+  bottom: 500px !important;
+
+  span {
+    color: $colorRed1;
+    background-color: $colorBlackTrans;
+  }
+
+  h3 {
+    background-color: $colorBlackTrans;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 800;
+  }
+
+  p {
+    background-color: $colorBlackTrans;
+    text-transform: uppercase;
+  }
+}
+
+/* ------------------INICIO CARDS (Planes)------------------------------ */
+
+.main__planes {
+  background-image: url(../multimedia/gym9.jpg);
+}
+
+.section-planes {
+  background-image: url(../multimedia/gym9.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: $colorBlack;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 100%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  padding: 20px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.box-planes {
+  border: 2px solid $colorBlack;
+  border-radius: 7px;
+}
+
+

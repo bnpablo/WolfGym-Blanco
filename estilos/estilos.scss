@@ -1,0 +1,77 @@
+/* --------------------VARIABLES------------------------------------------- */
+
+$colorRed1: #d63138;
+$colorRed2: #fe2d2f;
+$colorWhite: #edf2f4;
+$colorBlack: #111111;
+$colorBlackTrans: #11111100;
+$colorBlackTable: #212121;
+$fuente: "Open Sans", sans-serif;
+
+@mixin fuentePrincipal {
+  color: $setColor;
+  text-transform: uppercase;
+  font-size: $setSize;
+}
+
+
+
+
+/* ------------------------UNIVERSAL--------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $fuente;
+  background-color: $colorBlack;
+}
+
+/* --------------------MAIN-BOTON---------------------------- */
+.btn-danger {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.btn-danger:hover {
+  cursor: pointer;
+  background-color: $colorBlack;
+  transition: all 0.8s;
+}
+
+/* --------------------MAIN-BOTON-SUBIR------------------------- */
+
+.boton-subir {
+  height: 35px;
+  width: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  text-align: center;
+  line-height: 35px;
+  color: $colorWhite;
+  border-radius: 3px;
+  border: 0.5px solid $colorRed1;
+  font-size: 30px;
+  background-color: $colorBlack;
+}
+
+.boton-subir:hover {
+  color: $colorRed1;
+  background-color: $colorBlack;
+  transition: all 0.8s;
+  border: 0.5px solid $colorWhite;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import "_index";
+@import "_actividades";
+@import "_blog";
+@import "_contacto";
+@import "_nosotros";
+@import "_responsive";
+@import "_footer";
+
+
