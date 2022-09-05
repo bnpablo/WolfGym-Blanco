@@ -6,33 +6,19 @@
   }
 
   .container-texto-logo h1 {
-    font-size: 25px;
+    color: $colorRed2;
   }
 }
 
 @media only screen and (max-width: 1417px) {
-
-
-  
   .header {
     font-size: 9px;
   }
 
-  .container-texto-logo h1 {
-    font-size: 20px;
-  }
+
 }
 
 @media only screen and (max-width: 1225px) {
-  /* ----------- HEADER ------------ */
-
-  .texto-galeria {
-    font-size: 16px !important;
-  }
-
-  .texto {
-    font-size: 10px;
-  }
 
   /* ------- HEADER-MENU -------- */
 
@@ -111,13 +97,9 @@
     width: 100px;
   }
 
-  .container-texto-logo h1 {
-    font-size: 15px;
-  }
+
 
   .texto {
-    color: $colorWhite;
-    font-size: 10px;
     font-weight: 700;
     padding-right: 35px;
   }
@@ -126,11 +108,9 @@
 @media only screen and (max-width: 991px) {
   .container-texto-logo h1 {
     font-size: 40px;
+    color: $colorRed2;
   }
 
-  .texto {
-    padding-right: 10px;
-  }
 
   .div-frase-main {
     font-size: 25px;
@@ -163,6 +143,7 @@
 
     .container-texto-logo h1 {
       font-size: 40px;
+      color: $colorRed2;
     }
 
     .texto {
@@ -219,9 +200,7 @@
       font-size: 6px;
     }
 
-    .container-texto-logo h1 {
-      font-size: 30px;
-    }
+
 
     .redes-titulo {
       font-size: 20px;
@@ -235,13 +214,10 @@
     .lista-nosotros i {
       font-size: 20px;
     }
-    
   }
 
   @media only screen and (max-width: 475px) {
-    .container-texto-logo h1 {
-      font-size: 22px;
-    }
+ 
 
     .logo {
       height: 70px;
@@ -267,7 +243,7 @@
     }
 
     .texto {
-      font-size: 8px;
+      font-size: 12px;
     }
     .section-calendario {
       width: 100%;

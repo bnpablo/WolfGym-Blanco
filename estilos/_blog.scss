@@ -8,11 +8,13 @@
   height: auto;
 }
 
-#galeria .col-lg-4 p {
-  padding-top: 30px;
-  color: $colorRed1;
-  font-size: 20px;
-  text-transform: uppercase;
+#galeria .col-lg-4 {
+  p {
+    padding-top: 30px;
+    color: $colorRed1;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
 
   span {
     color: $colorWhite;
@@ -31,4 +33,3 @@
   transition: all 0.8s;
   filter: grayscale(0);
 }
-
