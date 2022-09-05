@@ -7,13 +7,12 @@
 
 /* --------------------HEADER-TEXTO-LOGO--------------------- */
 
-.container-texto-logo{
+.container-texto-logo {
   padding-right: 8%;
 }
 
 .texto {
   @include fuente($colorWhite, 15px, 700, uppercase);
-
 }
 
 .container-texto-logo h1 {
@@ -21,7 +20,6 @@
   font-family: $fuente;
   color: $colorRed2;
   font-size: 30px;
-  
 }
 
 .parpadea {
@@ -134,7 +132,6 @@
 }
 
 .div-frase-main {
-
   @include fuente($colorWhite, 45px, 800, uppercase);
   background-color: $colorBlackTrans;
   position: absolute !important;
@@ -146,7 +143,7 @@
   }
 
   h3 {
-    @include fuente(null, 55px, 800, uppercase);    
+    @include fuente(null, 55px, 800, uppercase);
     background-color: $colorBlackTrans;
     text-align: center;
   }
@@ -159,16 +156,14 @@
 
 /* ------------------INICIO CARDS (Planes)------------------------------ */
 
-
-
 .bg-plan1 {
-  background-color: map-get($planes, plan1)
+  background-color: map-get($planes, plan1);
 }
 
 .bg-plan2 {
-  background-color: map-get($planes, plan2)
+  background-color: map-get($planes, plan2);
 }
 
 .bg-plan3 {
-  background-color: map-get($planes, plan3)
+  background-color: map-get($planes, plan3);
 }

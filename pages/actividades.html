@@ -2,73 +2,77 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="wolfgym, gym, gimnasio, grilla, actividades, entrenamiento, horarios, turnos">
-    <meta name="description" content="Grilla detallada del gimnasio para no perderse ninguna clase">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="wolfgym, gym, gimnasio, grilla, actividades, entrenamiento, horarios, turnos">
+  <meta name="description" content="Grilla detallada del gimnasio para no perderse ninguna clase">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="../multimedia/LogoPlateadoSinBordes.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../estilos/estilos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="../multimedia/LogoPlateadoSinBordes.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="../estilos/estilos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"/>
-
-    <title>Actividades</title>
+  <title>Actividades</title>
 </head>
 
 <body>
   <div class="container-body-calendario">
-    <header class="header">       
+    <header class="header">
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand logo" href="../index.html"><div class="container-imagen-logo"></div></a>
-      <div class="container-texto-logo">
-        <h1><p class="texto-logo">wolf gym</p></h1>
-        <span class="parpadea texto"><strong>let out the beast</strong></span>
-      </div>
-      <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ">
-          <li class="nav-item active">
-            <a class="nav-link red" href="../index.html"><span class="menu-separador-inicio">|</span>Inicio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./actividades.html"><span class="menu-separador">|</span>Actividades</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./blog.html"><span class="menu-separador">|</span>Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./nosotros.html"><span class="menu-separador">|</span>Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#precios-1"><span class="menu-separador">|</span>Precios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contacto.html"><span class="menu-separador">|</span>Contacto</a>
-          </li>                         
-        </ul>
-      </div>
-    </nav>
-      </header>
+        <a class="navbar-brand logo" href="../index.html">
+          <div class="container-imagen-logo"></div>
+        </a>
+        <div class="container-texto-logo">
+          <h1>
+            <p class="texto-logo">wolf gym</p>
+          </h1>
+          <span class="parpadea texto"><strong>let out the beast</strong></span>
+        </div>
+        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ">
+            <li class="nav-item active">
+              <a class="nav-link red" href="../index.html"><span class="menu-separador-inicio">|</span>Inicio <span
+                  class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./actividades.html"><span class="menu-separador">|</span>Actividades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html"><span class="menu-separador">|</span>Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html"><span class="menu-separador">|</span>Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#precios-1"><span class="menu-separador">|</span>Precios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html"><span class="menu-separador">|</span>Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <main class="main__calendario">
 
-        <div class="calendario-h3"><h3>Clases Wolf Gym</h3></div>
-        
-        <div class="container classtime-table">
-          <div class="row">                  
+      <div class="calendario-h3">
+        <h3>Clases Wolf Gym</h3>
+      </div>
+
+      <div class="container classtime-table">
+        <div class="row">
           <table class="table table-dark table-striped">
             <thead>
               <tr->
@@ -139,87 +143,31 @@
             </tbody>
           </table>
         </div>
-        </div>
-        <!-- <section class="section-calendario">
-           <div class="inicio-tabla"></div>
-           <div class="tabla__dias">lunes</div>
-           <div class="tabla__dias">martes</div>
-           <div class="tabla__dias">miercoles</div>
-           <div class="tabla__dias">jueves</div>
-           <div class="tabla__dias">viernes</div>
-           <div class="tabla__dias">sabado</div>
-           <div class="tabla__horario">8:00</div>
-           <div class= "tabla__clases"><p>8:00 - 22:00 <span>MUSCULACION</span></p></div>
-           <div class= "tabla__clases"><p>8:00 - 22:00 <span>MUSCULACION</span></p></div>
-           <div class= "tabla__clases"><p>8:00 - 22:00 <span>MUSCULACION</span></p></div>
-           <div class= "tabla__clases"><p>8:00 - 22:00 <span>MUSCULACION</span></p></div>
-           <div class= "tabla__clases"><p>8:00 - 22:00 <span>MUSCULACION</span></p></div>
-           <div class= "tabla__clases"><p>10:00 - 16:00 <span>MUSCULACION</span></p></div>
-           <div class="tabla__horario">10:00</div>
-           <div><p>10:00 - 11:00 <span>boxeo</span></p></div>
-           <div><p>10:00 - 11:00 <span>funcional</span></p></div>
-           <div><p>10:00 - 11:00 <span>boxeo</span></p></div>
-           <div><p>10:00 - 11:00 <span>spinning</span></p></div>
-           <div><p>10:00 - 11:00 <span>funcional</span></p></div>
-           <div><p>10:00 - 11:00 <span>boxeo</span></p></div>
-           <div class="tabla__horario">14:00</div>
-           <div><p>14:00 - 15:30 <span>funcional</span></p></div>
-           <div><p>14:00 - 15:30 <span>boxeo</span></p></div>
-           <div><p>14:00 - 15:30 <span>spinning</span></p></div>
-           <div><p>14:00 - 15:30 <span>boxeo</span></p></div>
-           <div><p>14:00 - 15:30 <span>funcional</span></p></div>
-           <div><p>14:00 - 15:30 <span>boxeo</span></p></div>
-           <div class="tabla__horario">16:00</div>
-           <div><p>16:00 - 17:00 <span>crossfit</span></p></div>
-           <div><p>16:00 - 17:00 <span>funcional</span></p></div>
-           <div><p>16:00 - 17:00 <span>spinning</span></p></div>
-           <div><p>16:00 - 17:00 <span>crossfit</span></p></div>
-           <div><p>16:00 - 17:00 <span>funcional</span></p></div> 
-           <div><p>16:00 - 17:00 <span>funcional</span></p></div>   
-           <div class="tabla__horario">18:00</div>   
-           <div><p>18:00 - 19:00 <span>boxeo</span></p></div>   
-           <div><p>18:00 - 19:00 <span>spinning</span></p></div>       
-           <div><p>18:00 - 19:00 <span>funcional</span></p></div>   
-           <div><p>18:00 - 19:00 <span>boxeo</span></p></div>   
-           <div><p>18:00 - 19:00 <span>crossfit</span></p></div>   
-           <div><p>18:00 - 19:00 <span>boxeo</span></p></div>   
-           <div class="tabla__horario">20:00</div>
-           <div><p>20:00 - 21:00 <span>funcional</span></p></div>   
-           <div><p>20:00 - 21:00 <span>boxeo</span></p></div>   
-           <div><p>20:00 - 21:00 <span>spinning</span></p></div>   
-           <div><p>20:00 - 21:00 <span>boxeo</span></p></div>   
-           <div><p>20:00 - 21:00 <span>crossfit</span></p></div>   
-           <div><p>20:00 - 21:00 <span>funcional</span></p></div>         
-        </section> -->
+      </div>
+
     </main>
 
     <footer class="footer">
       <p>
-         <span>©</span> 2022 <span>| Wolf Gym |</span> 
+        <span>©</span> 2022 <span>| Wolf Gym |</span>
         <a href="https://insertarWeb.com.ar">insertarMarca</a>
       </p>
     </footer>
 
   </div>
 
-    <a href="#" class="boton-subir">
-      <i class="fa-solid fa-angle-up"></i>
+  <a href="#" class="boton-subir">
+    <i class="fa-solid fa-angle-up"></i>
 
-      <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
 </body>
 
 </html>

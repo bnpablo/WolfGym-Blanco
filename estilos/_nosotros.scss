@@ -15,19 +15,16 @@
 /* --------------------TITULO-SUB------------------------- */
 
 .titulo-nosotros {
-  font-size: 50px;
-  color: $colorWhite;
+  @include fuente($colorWhite, 50px, null, null);
   display: grid;
   place-items: center;
   padding-top: 50px;
 }
 
 .sub-titulo-nosotros {
-  color: $colorWhite;
+  @extend .titulo-nosotros;
   text-transform: none;
   font-size: 15px;
-  display: grid;
-  place-items: center;
   padding-top: 30px;
 }
 
@@ -43,14 +40,12 @@
   justify-content: space-around;
 
   i {
-    color: $colorRed2;
-    font-size: 50px;
+    @include fuente($colorRed2, 50px, null, null);
     padding: 70px;
   }
 }
 
 .item1 {
-  font-size: 10px;
-  color: rgb(128, 126, 126);
+  @include fuente(rgb(128, 126, 126), 10px, null, null);
   text-transform: none;
 }
