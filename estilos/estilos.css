@@ -1,4 +1,4 @@
-/* --------------------VARIABLES------------------------------------------- */
+/* --------------------VARIABLES/ MIXIN/ MAP------------------------------------------- */
 /* ------------------------UNIVERSAL--------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 * {
@@ -47,12 +47,6 @@
 
 /* --------------------INICIO _INDEX.SCSS------------------------------------------- */
 /* --------------------BODY-HEADER------------------------------------------- */
-.container-body {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr 8fr 1fr;
-}
-
 .header {
   font-size: 16px;
   font-weight: 700;
@@ -60,19 +54,21 @@
 }
 
 /* --------------------HEADER-TEXTO-LOGO--------------------- */
-.container-texto-logo h1 {
-  font-family: "Open Sans", sans-serif;
-  color: #fe2d2f;
-  font-size: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
+.container-texto-logo {
+  padding-right: 8%;
 }
 
-.texto {
+.texto, .container-texto-logo h1 {
   color: #edf2f4;
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.container-texto-logo h1 {
+  font-family: "Open Sans", sans-serif;
+  color: #fe2d2f;
+  font-size: 30px;
 }
 
 .parpadea {
@@ -145,14 +141,13 @@
   transition: all 0.6s;
 }
 
-.menu-separador {
+.menu-separador, .menu-separador-inicio {
   color: #d63138;
   padding: 0px 10px 0px 10px;
 }
 
 .menu-separador-inicio {
   color: #111111;
-  padding: 0px 10px 0px 10px;
 }
 
 /* --------------------FIN-HEADER------------------------------------------------- */
@@ -171,6 +166,7 @@
   color: #edf2f4;
   font-size: 45px;
   font-weight: 800;
+  text-transform: uppercase;
   background-color: rgba(17, 17, 17, 0);
   position: absolute !important;
   bottom: 500px !important;
@@ -180,10 +176,11 @@
   background-color: rgba(17, 17, 17, 0);
 }
 .div-frase-main h3 {
-  background-color: rgba(17, 17, 17, 0);
-  text-align: center;
   font-size: 55px;
   font-weight: 800;
+  text-transform: uppercase;
+  background-color: rgba(17, 17, 17, 0);
+  text-align: center;
 }
 .div-frase-main p {
   background-color: rgba(17, 17, 17, 0);
@@ -191,30 +188,16 @@
 }
 
 /* ------------------INICIO CARDS (Planes)------------------------------ */
-.main__planes {
-  background-image: url(../multimedia/gym9.jpg);
+.bg-plan1 {
+  background-color: #f7ea00;
 }
 
-.section-planes {
-  background-image: url(../multimedia/gym9.jpg);
-  background-position: center;
-  background-size: cover;
-  background-color: #111111;
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 100%;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
-  padding: 20px;
-  text-align: center;
-  justify-content: space-between;
+.bg-plan2 {
+  background-color: #e48900;
 }
 
-.box-planes {
-  border: 2px solid #111111;
-  border-radius: 7px;
+.bg-plan3 {
+  background-color: #be0000;
 }
 
 /* -------------------------------INICIO _ACTIVIDADES.SCSS-------------------------------- */
@@ -324,22 +307,6 @@ div h3 {
   filter: grayscale(0);
 }
 
-/* --------------------TEXTO-GALERIA------------------------- */
-.redes-titulo {
-  background-image: var(--gradient-black-red);
-  color: #edf2f4;
-  text-align: center;
-  font-size: 30px;
-}
-
-.redes-parrafo {
-  background-image: var(--gradient-black-red);
-  color: #edf2f4;
-  padding: 10px;
-  text-align: center;
-  text-transform: none;
-}
-
 /* -------------------------------INICIO CONTACTO.SSS------------------------------------------------------ */
 /* --------------------SOCIAL---------------------------- */
 .fa-brands {
@@ -430,6 +397,12 @@ iframe {
 }
 
 /* -------------------------------INICIO _NOSOTROS.SCSS---------------------------------------------------------------------------- */
+.container-body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
+}
+
 .main__nosotros {
   background-color: #111111;
   height: 100vh;
@@ -499,14 +472,14 @@ iframe {
   .texto-galeria {
     font-size: 16px !important;
   }
-  .texto {
+  .texto, .container-texto-logo h1 {
     font-size: 10px;
   }
   /* ------- HEADER-MENU -------- */
   .menu a {
     font-size: 12px;
   }
-  .menu-separador {
+  .menu-separador, .menu-separador-inicio {
     padding: 0px 2px 0px 2px;
   }
   /* ------- HEADER-SOCIAL -------- */
@@ -551,21 +524,6 @@ iframe {
     width: 100%;
     font-size: 10px;
   }
-  /* -----------planes--------------- */
-  .section-planes {
-    width: 100%;
-    height: auto;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 100%;
-    grid-row-gap: 50px;
-    grid-column-gap: 5px;
-    padding: 10px;
-    text-align: center;
-    justify-content: space-between;
-  }
-  .box-planes p {
-    font-size: 30px;
-  }
   /* -----------footer--------------- */
   footer p {
     font-size: 6px;
@@ -580,7 +538,7 @@ iframe {
   .container-texto-logo h1 {
     font-size: 15px;
   }
-  .texto {
+  .texto, .container-texto-logo h1 {
     color: #edf2f4;
     font-size: 10px;
     font-weight: 700;
@@ -591,7 +549,7 @@ iframe {
   .container-texto-logo h1 {
     font-size: 40px;
   }
-  .texto {
+  .texto, .container-texto-logo h1 {
     padding-right: 10px;
   }
   .div-frase-main {
@@ -622,7 +580,7 @@ iframe {
   .container-texto-logo h1 {
     font-size: 40px;
   }
-  .texto {
+  .texto, .container-texto-logo h1 {
     padding-right: 10px;
   }
   .menu-separador-inicio {
@@ -676,17 +634,6 @@ iframe {
   .lista-nosotros i {
     font-size: 20px;
   }
-  .section-planes {
-    width: 100%;
-    height: auto;
-    grid-template-columns: 100%;
-    grid-template-rows: 30% 30% 30%;
-    grid-row-gap: 50px;
-    grid-column-gap: 5px;
-    padding: 10px;
-    text-align: center;
-    justify-content: space-between;
-  }
 }
 @media only screen and (max-width: 903px) and (max-width: 475px) {
   .container-texto-logo h1 {
@@ -710,7 +657,7 @@ iframe {
     font-size: 7px;
     font-weight: 600;
   }
-  .texto {
+  .texto, .container-texto-logo h1 {
     font-size: 8px;
   }
   .section-calendario {

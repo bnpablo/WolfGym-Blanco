@@ -1,4 +1,4 @@
-/* --------------------VARIABLES------------------------------------------- */
+/* --------------------VARIABLES/ MIXIN/ MAP------------------------------------------- */
 
 $colorRed1: #d63138;
 $colorRed2: #fe2d2f;
@@ -8,13 +8,18 @@ $colorBlackTrans: #11111100;
 $colorBlackTable: #212121;
 $fuente: "Open Sans", sans-serif;
 
-@mixin fuentePrincipal {
-  color: $setColor;
-  text-transform: uppercase;
-  font-size: $setSize;
+@mixin fuente($color, $size, $weight, $trans) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  text-transform: $trans;
 }
 
-
+$planes: (
+  plan1: #f7ea00,
+  plan2: #e48900,
+  plan3: #be0000,
+);
 
 
 /* ------------------------UNIVERSAL--------------------------------------- */

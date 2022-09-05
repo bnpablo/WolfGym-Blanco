@@ -11,6 +11,9 @@
 }
 
 @media only screen and (max-width: 1417px) {
+
+
+  
   .header {
     font-size: 9px;
   }
@@ -93,25 +96,6 @@
     width: 100%;
     font-size: 10px;
   }
-
-  /* -----------planes--------------- */
-
-  .section-planes {
-    width: 100%;
-    height: auto;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 100%;
-    grid-row-gap: 50px;
-    grid-column-gap: 5px;
-    padding: 10px;
-    text-align: center;
-    justify-content: space-between;
-  }
-
-  .box-planes p {
-    font-size: 30px;
-  }
-
   /* -----------footer--------------- */
 
   footer p {
@@ -251,18 +235,7 @@
     .lista-nosotros i {
       font-size: 20px;
     }
-
-    .section-planes {
-      width: 100%;
-      height: auto;
-      grid-template-columns: 100%;
-      grid-template-rows: 30% 30% 30%;
-      grid-row-gap: 50px;
-      grid-column-gap: 5px;
-      padding: 10px;
-      text-align: center;
-      justify-content: space-between;
-    }
+    
   }
 
   @media only screen and (max-width: 475px) {

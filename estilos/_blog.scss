@@ -32,19 +32,3 @@
   filter: grayscale(0);
 }
 
-/* --------------------TEXTO-GALERIA------------------------- */
-
-.redes-titulo {
-  background-image: var(--gradient-black-red);
-  color: $colorWhite;
-  text-align: center;
-  font-size: 30px;
-}
-
-.redes-parrafo {
-  background-image: var(--gradient-black-red);
-  color: $colorWhite;
-  padding: 10px;
-  text-align: center;
-  text-transform: none;
-}

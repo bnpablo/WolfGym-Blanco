@@ -1,4 +1,9 @@
 /* -------------------------------INICIO _NOSOTROS.SCSS---------------------------------------------------------------------------- */
+.container-body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
+}
 
 .main__nosotros {
   background-color: $colorBlack;

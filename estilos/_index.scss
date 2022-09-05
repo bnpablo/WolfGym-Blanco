@@ -1,33 +1,27 @@
 /* --------------------INICIO _INDEX.SCSS------------------------------------------- */
 
 /* --------------------BODY-HEADER------------------------------------------- */
-.container-body {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr 8fr 1fr;
-}
-
 .header {
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
+  @include fuente(null, 16px, 700, uppercase);
 }
 
 /* --------------------HEADER-TEXTO-LOGO--------------------- */
 
-.container-texto-logo h1 {
-  font-family: $fuente;
-  color: $colorRed2;
-  font-size: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
+.container-texto-logo{
+  padding-right: 8%;
 }
 
 .texto {
-  color: $colorWhite;
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
+  @include fuente($colorWhite, 15px, 700, uppercase);
+
+}
+
+.container-texto-logo h1 {
+  @extend .texto;
+  font-family: $fuente;
+  color: $colorRed2;
+  font-size: 30px;
+  
 }
 
 .parpadea {
@@ -122,8 +116,8 @@
   padding: 0px 10px 0px 10px;
 }
 .menu-separador-inicio {
+  @extend .menu-separador;
   color: $colorBlack;
-  padding: 0px 10px 0px 10px;
 }
 
 /* --------------------FIN-HEADER------------------------------------------------- */
@@ -140,9 +134,8 @@
 }
 
 .div-frase-main {
-  color: $colorWhite;
-  font-size: 45px;
-  font-weight: 800;
+
+  @include fuente($colorWhite, 45px, 800, uppercase);
   background-color: $colorBlackTrans;
   position: absolute !important;
   bottom: 500px !important;
@@ -153,10 +146,9 @@
   }
 
   h3 {
+    @include fuente(null, 55px, 800, uppercase);    
     background-color: $colorBlackTrans;
     text-align: center;
-    font-size: 55px;
-    font-weight: 800;
   }
 
   p {
@@ -167,30 +159,16 @@
 
 /* ------------------INICIO CARDS (Planes)------------------------------ */
 
-.main__planes {
-  background-image: url(../multimedia/gym9.jpg);
+
+
+.bg-plan1 {
+  background-color: map-get($planes, plan1)
 }
 
-.section-planes {
-  background-image: url(../multimedia/gym9.jpg);
-  background-position: center;
-  background-size: cover;
-  background-color: $colorBlack;
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 100%;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
-  padding: 20px;
-  text-align: center;
-  justify-content: space-between;
+.bg-plan2 {
+  background-color: map-get($planes, plan2)
 }
 
-.box-planes {
-  border: 2px solid $colorBlack;
-  border-radius: 7px;
+.bg-plan3 {
+  background-color: map-get($planes, plan3)
 }
-
-
