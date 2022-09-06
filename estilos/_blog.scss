@@ -1,11 +1,19 @@
 /* -------------------------------INICIO _BLOG.SCSS----------------------------------------------------------- */
 
+.container-body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
+}
+
 .text-center h3 {
   font-size: 40px;
 }
 
 .main__blog {
-  height: auto;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
 }
 
 #galeria .col-lg-4 {
