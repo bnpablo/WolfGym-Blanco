@@ -58,10 +58,6 @@ html {
 }
 
 /* --------------------HEADER-TEXTO-LOGO--------------------- */
-html {
-  scroll-behavior: smooth;
-}
-
 .container-texto-logo {
   padding-right: 8%;
 }
@@ -294,12 +290,6 @@ div h3 {
   font-size: 40px;
 }
 
-.main__blog {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr 8fr 1fr;
-}
-
 #galeria .col-lg-4 p {
   padding-top: 30px;
   color: #d63138;
@@ -414,15 +404,9 @@ iframe {
 }
 
 /* -------------------------------INICIO _NOSOTROS.SCSS---------------------------------------------------------------------------- */
-.container-body {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr 8fr 1fr;
-}
-
 .main__nosotros {
   background-color: #111111;
-  height: 100vh;
+  height: auto;
   width: 100%;
   text-transform: uppercase;
 }
