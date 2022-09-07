@@ -315,11 +315,11 @@ div h3 {
 
 /* -------------------------------INICIO CONTACTO.SCSS------------------------------------------------------ */
 /* --------------------SOCIAL---------------------------- */
-.fa-brands {
+.redes {
   color: #d63138;
 }
 
-.fa-brands:hover {
+.redes:hover {
   color: #edf2f4;
   transition: all 0.6s;
 }
@@ -409,7 +409,7 @@ iframe {
   height: auto;
   width: 100%;
   text-transform: uppercase;
-  padding-bottom: 120px;
+  padding-bottom: 10%;
 }
 
 /* --------------------TITULO-SUB------------------------- */
