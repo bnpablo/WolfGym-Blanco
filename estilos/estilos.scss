@@ -31,6 +31,10 @@ $planes: (
   background-color: $colorBlack;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* --------------------MAIN-BOTON---------------------------- */
 .btn-danger {
   text-transform: uppercase;

@@ -9,6 +9,10 @@
   background-color: #111111;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* --------------------MAIN-BOTON---------------------------- */
 .btn-danger {
   text-transform: uppercase;
@@ -54,6 +58,10 @@
 }
 
 /* --------------------HEADER-TEXTO-LOGO--------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
 .container-texto-logo {
   padding-right: 8%;
 }
@@ -276,12 +284,20 @@ div h3 {
 }
 
 /* -------------------------------INICIO _BLOG.SCSS----------------------------------------------------------- */
+.container-body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
+}
+
 .text-center h3 {
   font-size: 40px;
 }
 
 .main__blog {
-  height: auto;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
 }
 
 #galeria .col-lg-4 p {
