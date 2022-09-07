@@ -472,7 +472,7 @@ iframe {
     padding: 0px 2px 0px 2px;
   }
   /* ------- HEADER-SOCIAL -------- */
-  .fa-brands {
+  .fa-brands, .fa-solid {
     font-size: 20px;
     letter-spacing: 20px;
   }
@@ -586,6 +586,7 @@ iframe {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
   .lista-nosotros i {
     font-size: 20px;

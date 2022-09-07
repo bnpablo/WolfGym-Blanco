@@ -34,6 +34,10 @@
     letter-spacing: 20px;
   }
 
+  .fa-solid{
+    @extend .fa-brands;
+  }
+
   /* ----------- MAIN ------------ */
 
   .main-descuento {
@@ -170,6 +174,7 @@
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: center;
+      align-items: center;
 
       i {
         font-size: 20px;
