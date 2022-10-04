@@ -12,7 +12,9 @@ function script(planElegido) {
 
   let plan = planElegido.toString();
 
-  let stringAlertaPlanes = "Ha elegido el Plan " + plan + " con un precio de: ";
+  let stringAlertaPlanesInicio = "Ha elegido el Plan ";
+  let stringAlertaPlanesFin = " con un precio de: ";
+
 
   let stringPlanBonificado = "El precio de tu Plan bonificado es de: ";
 
@@ -34,7 +36,7 @@ function script(planElegido) {
     switch (plan) {
       case "1":
         precioPlan = planBasico;
-        alert(stringAlertaPlanes + precioPlan + moneda);
+        alert(stringAlertaPlanesInicio + plan + stringAlertaPlanesFin + precioPlan + moneda);
         simuladorPlanes(plan, precioPlan);
         plan = prompt(stringMenuPlanes);
 
@@ -42,7 +44,7 @@ function script(planElegido) {
 
       case "2":
         precioPlan = planLibre;
-        alert(stringAlertaPlanes + precioPlan + moneda);
+        alert(stringAlertaPlanesInicio + plan + stringAlertaPlanesFin + precioPlan + moneda);
         simuladorPlanes(plan, precioPlan);
         plan = prompt(stringMenuPlanes);
 
@@ -50,7 +52,7 @@ function script(planElegido) {
 
       case "3":
         precioPlan = planFull;
-        alert(stringAlertaPlanes + precioPlan + moneda);
+        alert(stringAlertaPlanesInicio + plan + stringAlertaPlanesFin + precioPlan + moneda);
         simuladorPlanes(plan, precioPlan);
         plan = prompt(stringMenuPlanes);
 
