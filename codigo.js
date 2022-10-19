@@ -91,6 +91,10 @@ function script(planElegido) {
 function comprarRemera() {
 
   const precioRemera = 1000;
+  const carrito = [];
+  let stockRemeras = 2;
+  
+
 
 class Remera {
   constructor(modelo, precio, talle, color) {
@@ -117,16 +121,45 @@ alert("Usted Eligio Remera modelo: " + remera1.modelo + " talle: " + remera1.tal
 remera1.sumarIva();
 
 alert("Precio total + iva: " + remera1.precio);
-let confirmacion =  prompt("Confirmar compra ? (1 para confirmar o 2 para cancelar")
-if(confirmacion == 1){
+let confirmacionCompra =  prompt("Confirmar compra ? (1 para confirmar o 2 para agregar mas remeras)")
+if(confirmacionCompra == 1){
   remera1.vender();
+  return alert("Compra Finalizada");
+} else
+
+for (let i = 1; i <= stockRemeras; i++ ){
+  carrito.push(new Remera());
+  console.log(carrito);
+
+  if(i == stockRemeras){
+  break;
+  }
+
 }
 
 
 
 
-console.log(remera1);
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// do{
+//   let entrada = remera1;
+//   carrito.push(remera1);
+//   console.log(carrito.length);  
+// } while (carrito.length != stockRemeras)
+// const nuevoCarrito = carrito.concant(new Remera())
+
