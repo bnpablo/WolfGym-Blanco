@@ -86,3 +86,47 @@ function script(planElegido) {
     alert(stringPlanBonificado + planConDescuento + moneda);
   }
 }
+
+
+function comprarRemera() {
+
+  const precioRemera = 1000;
+
+class Remera {
+  constructor(modelo, precio, talle, color) {
+    this.modelo = prompt("ingrese modelo 1, 2 o 3");
+    this.precio = precioRemera;
+    this.talle = prompt("ingrese modelo S, M o L");
+    this.color = prompt("ingrese modelo Blanco o Negro");
+    this.vendido = false;
+  }
+
+  sumarIva() {
+    this.precio = this.precio * 1.21;
+  }
+
+  vender(){
+      this.vendido = true;
+
+  }
+}
+
+const remera1 = new Remera();
+alert("Usted Eligio Remera modelo: " + remera1.modelo + " talle: " + remera1.talle + " color: " + remera1.color);
+
+remera1.sumarIva();
+
+alert("Precio total + iva: " + remera1.precio);
+let confirmacion =  prompt("Confirmar compra ? (1 para confirmar o 2 para cancelar")
+if(confirmacion == 1){
+  remera1.vender();
+}
+
+
+
+
+console.log(remera1);
+
+
+
+}
