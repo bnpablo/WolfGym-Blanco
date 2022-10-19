@@ -100,8 +100,8 @@ class Remera {
   constructor(modelo, precio, talle, color) {
     this.modelo = prompt("ingrese modelo 1, 2 o 3");
     this.precio = precioRemera;
-    this.talle = prompt("ingrese modelo S, M o L");
-    this.color = prompt("ingrese modelo Blanco o Negro");
+    this.talle = prompt("ingrese talle S, M o L");
+    this.color = prompt("ingrese color Blanco o Negro");
     this.vendido = false;
   }
 
@@ -124,42 +124,26 @@ alert("Precio total + iva: " + remera1.precio);
 let confirmacionCompra =  prompt("Confirmar compra ? (1 para confirmar o 2 para agregar mas remeras)")
 if(confirmacionCompra == 1){
   remera1.vender();
+  console.log(remera1)
   return alert("Compra Finalizada");
 } else
-
-for (let i = 1; i <= stockRemeras; i++ ){
+carrito.push(remera1);
+for (let i = 2; i <= stockRemeras; i++ ){
   carrito.push(new Remera());
-  console.log(carrito);
+  // console.log(carrito);
 
   if(i == stockRemeras){
+    for (const remera of carrito){
+    remera.sumarIva();
+    remera.vender();   
+    alert("Remera modelo: " + remera.modelo + ", precio: " + remera.precio);
+
+    }
+    console.log(carrito);
   break;
   }
 
 }
-
-
-
-
-
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-// do{
-//   let entrada = remera1;
-//   carrito.push(remera1);
-//   console.log(carrito.length);  
-// } while (carrito.length != stockRemeras)
-// const nuevoCarrito = carrito.concant(new Remera())
 
