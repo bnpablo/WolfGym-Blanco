@@ -91,6 +91,7 @@ function script(planElegido) {
 function comprarRemera() {
 
   const precioRemera = 1000;
+
   const carrito = [];
   let stockRemeras = 2;
   
@@ -118,25 +119,28 @@ class Remera {
 const remera1 = new Remera();
 alert("Usted Eligio Remera modelo: " + remera1.modelo + " talle: " + remera1.talle + " color: " + remera1.color);
 
-remera1.sumarIva();
-
-alert("Precio total + iva: " + remera1.precio);
 let confirmacionCompra =  prompt("Confirmar compra ? (1 para confirmar o 2 para agregar mas remeras)")
 if(confirmacionCompra == 1){
-  remera1.vender();
+  remera1.vender(); 
+  remera1.sumarIva(); 
   console.log(remera1)
+  alert("Precio total + iva: " + remera1.precio);
+
   return alert("Compra Finalizada");
 } else
+console.log(remera1);
+
 carrito.push(remera1);
+console.log(carrito);
+
 for (let i = 2; i <= stockRemeras; i++ ){
   carrito.push(new Remera());
-  // console.log(carrito);
 
   if(i == stockRemeras){
     for (const remera of carrito){
     remera.sumarIva();
     remera.vender();   
-    alert("Remera modelo: " + remera.modelo + ", precio: " + remera.precio);
+    alert("Usted a agregado " + "Remera modelo: " + remera.modelo + ", precio: " + remera.precio + " $ con IVA incluido");
 
     }
     console.log(carrito);
