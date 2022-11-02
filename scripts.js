@@ -64,8 +64,7 @@ botonRemera.onmouseout = () => {
 
 
 
-const objetoAJson = JSON.stringify(remera);
-localStorage.setItem("Objeto", objetoAJson);
+
 
 const getCarritoStorage = localStorage.getItem("objeto");
 const jsonObjeto = JSON.parse(getCarritoStorage);
