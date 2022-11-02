@@ -1,11 +1,13 @@
 const carrito = [];
 let contenedor = document.getElementById("misprods");
 
+
+
 function mostrarProductos(){
     for(const producto of productos){
         contenedor.innerHTML += `
             <div class="card col-sm-2" style="background-color: #111111;">
-                <img src=${producto.foto} class="card-img-top" alt="...">
+                <img src=${producto.foto} class="card-img-top img-fluid " alt="...">
                 <div class="card-body, text-white">
                     <h5 class="text-white, card-title">${producto.id}</h5>
                     <p class="text-white, card-text">${producto.nombre}</p>
@@ -28,7 +30,8 @@ mostrarProductos();
 function agregarAlCarrito(productoAComprar){
     carrito.push(productoAComprar);
     console.table(carrito);
-    const objetoAJson = JSON.stringify(productoAComprar);
+    /* implemento guardado en el storage de los objetos del carrito. */
+    const objetoAJson = JSON.stringify(carrito);
     localStorage.setItem("objeto", objetoAJson);
     alert("Has agregado producto "+productoAComprar.nombre+" exitosamente");
     document.getElementById("tablabody").innerHTML += `
@@ -63,9 +66,3 @@ botonRemera.onmouseout = () => {
 };
 
 
-
-
-
-const getCarritoStorage = localStorage.getItem("objeto");
-const jsonObjeto = JSON.parse(getCarritoStorage);
-console.log(jsonObjeto)
