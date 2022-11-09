@@ -1,13 +1,13 @@
 const carrito = [];
-let contenedor = document.getElementById("misprods");
+let container = document.getElementById("items");
 
-//Tome como esquelo el carrito hecho en el after ya que me parecio muy prolijo.
+//Tomé como esquelo el carrito hecho en el after ya que me resulto muy util
 
 function mostrarProductos() {
   for (const producto of productos) {
-    contenedor.innerHTML += `
+    container.innerHTML += `
             <div class="card col-sm-2" style="background-color: #111111;">
-                <img src=${producto.foto} class="card-img-top img-fluid " alt="...">
+                <img src=${producto.foto} class="card-img-top img-fluid " alt="Remeras">
                 <div class="card-body, text-white">
                     <h5 class="text-white, card-title">${producto.id}</h5>
                     <p class="text-white, card-text">${producto.nombre}</p>
@@ -18,7 +18,7 @@ function mostrarProductos() {
         `;
   }
 
-  //Armo un bucle forEach para definir evento para los 5 botones
+  //Armo un bucle forEach para definir evento para los 5 botones sin tener que repetir codigo
   productos.forEach((producto) => {
     document
       .getElementById(`btn${producto.id}`)
@@ -31,20 +31,21 @@ function mostrarProductos() {
 // Llamo a la funcion para mostrar los productos
 mostrarProductos();
 //Armo funcion para agregar al carrito los productos que previamente renderice
-function agregarAlCarrito(productoAComprar) {
+function agregarAlCarrito(prodStock) {
   /* pusheo productos al carrito */
-  carrito.push(productoAComprar);
+  carrito.push(prodStock);
   console.table(carrito);
   /* implemento guardado en el storage de los objetos del carrito. */
   const objetoAJson = JSON.stringify(carrito);
   localStorage.setItem("objeto", objetoAJson);
   /* Implemento alerta con sweetAlert */
   alertProdAgregado();
+  /* Armo tabla para mostrar los productos que vaya agregando */
   document.getElementById("tablabody").innerHTML += `
         <tr>
-            <td>${productoAComprar.id}</td>
-            <td>${productoAComprar.nombre}</td>
-            <td>${productoAComprar.precio}</td>
+            <td>${prodStock.id}</td>
+            <td>${prodStock.nombre}</td>
+            <td>${prodStock.precio}</td>
         </tr>
     `;
   let totalCarrito = carrito.reduce(
@@ -66,7 +67,6 @@ function alertProdAgregado() {
 }
 
 function agregarAlCarro() {
-  alert("La remera fue agregada con exito a su carrito");
   carrito.push(remera);
   console.table(carrito);
   const objetoAJson = JSON.stringify(remera);
