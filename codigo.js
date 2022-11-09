@@ -1,3 +1,8 @@
+
+
+/* ESTE ARCHIVO JS ESTA ACTUALMENTE EN DESUSO, LO UTILICE PARA LAS ENTREGAS PREVIAS E IR PRACTICANDO PREVIO A ARMAR EL CARRITO DE COMPRAS */
+
+
 function script(planElegido) {
   // Simulador de presupuesto de planes.
 
