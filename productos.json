@@ -27,6 +27,12 @@
         "foto": "./multimedia/Ecommerce/r5.jpg",
         "nombre": "Remera Blood",
         "precio": 1300
+    },
+    {
+        "id": 6,
+        "foto": "./multimedia/Ecommerce/r6.jpg",
+        "nombre": "Remera Frenzy",
+        "precio": 2500
     }
 ]
 
